@@ -1,0 +1,228 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style rules for body and images */
+body {
+  background-image: url('img/background.jpg');
+  background-size: cover;        /* fills the whole screen */
+  background-repeat: no-repeat;  /* prevents tiling */
+  background-position: center;   /* centers the image */
+  background-attachment: fixed;  /* <— makes it “stick” */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  min-height: 100vh;
+}
+
+.mainDiv {
+    width: 70%;
+    height: 90%;
+}
+
+main{
+    background-color:rgba(195, 255, 240, 0.85);
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    border-radius: 10%;
+    line-height: 1.8;
+}
+
+p{
+    font-size: 2em;
+}
+
+header{
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 10%;
+    padding-right: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 1%;
+    margin-right: 50%;
+    margin-bottom: 10%;
+    color: whitesmoke;
+}
+
+h2{
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 10%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    margin-right: 50%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    color: whitesmoke;
+    font-size: 2.5em;
+}
+
+h3{
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 10%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    margin-right: 50%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.title{
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.wrap {
+  float: left;          
+  margin-right: 15px;     
+  margin-bottom: 10px;            
+  border-radius: 8px;    
+}
+
+.clear{
+    clear: both;
+}
+
+.keyword{
+    font-style: italic;
+}
+
+ul.custom-list {
+  list-style: none;
+  font-size: 1.5em;
+  padding-left: 1.5em;
+}
+
+ul.custom-list li::before{
+    content:  "\1F4BE";
+    margin-right: 0.5em;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #2a1f14;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    position: sticky;
+    top: 0; 
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: lightcyan;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+
+footer{
+    text-align: center;
+    font-size: .85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-top: 30%;
+    width: 100%;
+}
+
+
+
+
+/* Media Query for Tablet Viewport */
+
+
+/* Tablet (768px – 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  nav a {
+    margin: 5px 10px;
+  }
+
+  header{
+    width: 80%;
+  }
+
+  h2{
+    width: 80%;
+  }
+  
+  h3{
+    width: 80%;
+  }
+
+  iframe{
+    height: inherit;
+    width: inherit;
+  }
+
+
+}
+
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+  header, nav, main, footer {
+    padding: 15px;
+  }
+
+  nav{
+    font-size: .75em;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  header{
+    width: 100%;
+  }
+
+  footer{
+    font-size: .4em;
+  }
+
+  h1{
+    width: 100%;
+  }
+
+  h2{
+    width: 100%;
+  }
+
+  iframe{
+    height: inherit;
+    width: inherit;
+  }
+
+}

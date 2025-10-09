@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Notes from the Loop</title>
+  </head>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="blog.html">Blog</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div class="mainDiv">
+      <header>
+        <h1>Blog</h1>
+      </header>
+
+      <h2>Search Trees, Graphs, and the Art of Finding the Best Path</h2>
+      <main>
+        <p>
+          <img
+            src="img/tree.png"
+            width="500"
+            height="300"
+            alt="A graph of a search tree"
+            class="wrap"
+          />
+          When you boil it down, most problems in computer science come down to
+          choices. What to do next? Which path to take? How to do it
+          efficiently? That’s where search trees and graph models come in.
+          They’re like maps of decision-making: every node represents a possible
+          state, and every branch represents a move you can make. A search tree
+          shows this branching structure clearly. It’s basically your algorithm
+          thinking out loud. A graph model takes that same concept but makes it
+          more flexible: connections can go anywhere, not just downward,
+          allowing loops, cycles, and complex relationships. This is what makes
+          graphs powerful for modeling real-world systems from social networks
+          to transportation routes.
+        </p>
+        <br />
+        <p class="title">
+          Greedy Algorithms: The Quick, Not Always Right Option
+        </p>
+        <br />
+        <p>
+          A greedy algorithm is like grabbing the best looking option at every
+          step, hoping it leads to the best overall result. In graph terms,
+          Dijkstra’s algorithm for finding the shortest path is a perfect
+          example. It always picks the next closest node until the destination
+          is reached. Greedy methods are simple and fast, but they don’t always
+          get the perfect solution. They lack the ability to look back or plan
+          ahead. Sometimes, being greedy means you miss a better path that takes
+          a little more patience to find.
+        </p>
+        <br />
+        <p class="title">The Knapsack Problem: When Greedy Isn’t Enough</p>
+        <br />
+        <p>
+          The 0/1 Knapsack Problem is a perfect case study. You’ve got a set of
+          items, each with a value and a weight, and a bag that can only carry
+          so much. The question: which items should you take to maximize value?
+          A greedy algorithm might grab the most valuable item or the one with
+          the best value to weight ratio first but that can backfire. The
+          combination that looks best locally isn’t always best globally.
+          Dynamic programming solves this by breaking the problem down into
+          smaller decisions: What’s the best value I can get with this capacity
+          and these items? It fills a grid of possible answers, ensuring that
+          every combination is considered efficiently. No guessing, no
+          backtracking just structured optimization.
+        </p>
+      </main>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="mainDiv">
+      <h2>When Recursion Goes Rogue</h2>
+      <main>
+        <p>
+          Let’s talk about the Fibonacci sequence. A simple example of recursion
+          that’s secretly a performance nightmare. A naive recursive version
+          calls itself again and again for the same values. To compute fib(10),
+          your code ends up recomputing fib(8), fib(7), and so on, for thousands
+          of times. The call structure forms a massive search tree, and each
+          level doubles the work. That’s problematic recursion in a nutshell:
+          elegant, but wildly inefficient.
+        </p>
+        <br />
+        <p class="title">Memoization and Dynamic Programming: Smarter Memory</p>
+        <br />
+        <p>
+          The fix? Memoization. It means saving the results of previous calls so
+          you don’t redo the same work twice. Instead of recomputing fib(8)
+          every time, your algorithm just looks it up. That one change turns an
+          exponential-time algorithm into a linear one. Dynamic programming (DP)
+          takes that same idea a step further. Rather than caching on the fly,
+          you build a table from the bottom up, solving smaller subproblems
+          first and reusing their answers. DP turns chaos into structure, and
+          brute force into strategy.
+        </p>
+      </main>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="mainDiv">
+      <h2>The Mimms Museum of Technology</h2>
+      <main>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.2007372758594!2d-84.34287552382315!3d34.03872151844331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50b2d97d0d63d%3A0x5825a80a4e541e5c!2sMimms%20Museum%20of%20Technology%20and%20Art!5e0!3m2!1sen!2sus!4v1760021730950!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="wrap"
+        ></iframe>
+        <p>
+          Located in Roswell, Georgia, the Mimms Museum of Technology and Art
+          (formerly the Computer Museum of America) celebrates the story of
+          human creativity through both technological innovation and artistic
+          expression.
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p class="title">What to See</p>
+        <ul class="custom-list">
+          <li>A Jacquard Loom punch card computer from the 19th century</li>
+          <li>The Enigma Machine: a WWII encoding machine</li>
+          <li>
+            The Cray-1 supercomputer: one of the most impressive feats of its
+            time.
+          </li>
+          <li>Technology from the Space Race and NASA missions.</li>
+        </ul>
+        <a href="tel:+17706950651" class="title"> ☎️ Call for more info</a>
+      </main>
+      <footer>
+        <p>&copy; Copyright 2025. All Rights Reserved.</p>
+        <p>kseemar1206@student.gwinnetttech.edu</p>
+      </footer>
+    </div>
+  </div>
+</html>
