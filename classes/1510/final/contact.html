@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blog about computer science" />
+    <meta
+      name="keywords"
+      content="html, css, java, computer science, blog, spring"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./img/semicolonThumbnail.png" />
+    <title>Notes from the Loop</title>
+  </head>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="blog.html">Blog</a>
+      </li>
+      <li>
+        <a href="FAQ.html">FAQ</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact Me</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div class="mainDiv">
+      <header>
+        <h1 id="top">Contact info</h1>
+      </header>
+
+      <main>
+        <form>
+          <!-- Text input -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+
+          <!-- Email input -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+
+          <!-- Dropdown menu -->
+          <label for="role">Occupation:</label>
+          <select id="role" name="role">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="admin">Professional</option>
+          </select>
+
+          <!-- Radio buttons -->
+          <p>Preferred Contact:</p>
+          <label
+            ><input type="radio" name="contact" value="email" /> Email</label
+          >
+          <label
+            ><input type="radio" name="contact" value="phone" /> Phone</label
+          >
+
+          <!-- Checkboxes -->
+          <p>Interests:</p>
+          <label
+            ><input type="checkbox" name="interests" value="coding" /> Coding -
+            Frontend</label
+          >
+          <label
+            ><input type="checkbox" name="interests" value="coding" /> Coding -
+            Backend</label
+          >
+          <label
+            ><input type="checkbox" name="interests" value="music" />
+            Math</label
+          >
+          <label
+            ><input type="checkbox" name="interests" value="coding" /> Data
+            Science</label
+          >
+
+          <!-- Textarea -->
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+      <br />
+      <div class="mainDiv">
+        <button>
+          <h1>
+            <a href="#top" class="noStyle"> Back to Top </a>
+          </h1>
+        </button>
+      </div>
+
+      <footer>
+        <p>&copy; Copyright 2025. All Rights Reserved.</p>
+        <p>kseemar1206@student.gwinnetttech.edu</p>
+      </footer>
+    </div>
+  </div>
+</html>
